@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PaiseKiBaat — AI-powered payment reminder platform for Indian SMBs. Automated reminders via SMS, WhatsApp, email, and calls." />
+  <title>PaiseKiBaat — Get Paid Faster, Stress-Free</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%23FF6B35'/><stop offset='100%25' stop-color='%23F59E0B'/></linearGradient></defs><rect width='32' height='32' rx='8' fill='url(%23g)'/><text x='16' y='23' text-anchor='middle' font-size='19' font-weight='bold' font-family='Arial,sans-serif' fill='white'>%E2%82%B9</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="PaiseKiBaat Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i>
+        </div>
+        <span class="logo-text">PaiseKiBaat</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-cta-btn">Start Free <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero" aria-labelledby="hero-headline">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="floating-rupees" id="floatingRupees"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            AI-Powered Payment Recovery
+          </div>
+          <h1 class="hero-headline" id="hero-headline">
+            Get Paid Faster,<br />
+            <span class="gradient-text">Stress-Free</span>
+          </h1>
+          <p class="hero-subheading">
+            Automated reminders via SMS, WhatsApp, email, and calls.<br />
+            No awkward follow-ups. Just results.
+          </p>
+
+          <div class="hero-channels" aria-label="Supported reminder channels">
+            <div class="channel-pill">
+              <i class="fa-solid fa-comment-sms" style="color:#25D366" aria-hidden="true"></i>
+              <span>SMS</span>
+            </div>
+            <div class="channel-pill">
+              <i class="fa-brands fa-whatsapp" style="color:#25D366" aria-hidden="true"></i>
+              <span>WhatsApp</span>
+            </div>
+            <div class="channel-pill">
+              <i class="fa-solid fa-envelope" style="color:#EA4335" aria-hidden="true"></i>
+              <span>Email</span>
+            </div>
+            <div class="channel-pill">
+              <i class="fa-solid fa-phone" style="color:#4285F4" aria-hidden="true"></i>
+              <span>Calls</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" aria-label="Start for free — go to contact section">
+              Start Free
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#how-it-works" class="btn-ghost" aria-label="See how PaiseKiBaat works">
+              <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+              See How It Works
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-avatars" aria-hidden="true">
+              <img src="https://i.pravatar.cc/36?img=11" alt="" loading="lazy" />
+              <img src="https://i.pravatar.cc/36?img=22" alt="" loading="lazy" />
+              <img src="https://i.pravatar.cc/36?img=33" alt="" loading="lazy" />
+              <img src="https://i.pravatar.cc/36?img=44" alt="" loading="lazy" />
+            </div>
+            <p class="trust-text"><strong>1,000+</strong> Indian businesses trust PaiseKiBaat</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-stack">
+            <div class="hero-dashboard-card">
+              <div class="dash-header">
+                <div class="dash-dot red"></div>
+                <div class="dash-dot yellow"></div>
+                <div class="dash-dot green"></div>
+                <span class="dash-title">PaiseKiBaat Dashboard</span>
+              </div>
+              <div class="dash-stats">
+                <div class="dash-stat">
+                  <span class="stat-label">Pending</span>
+                  <span class="stat-val pending">₹84,500</span>
+                </div>
+                <div class="dash-stat">
+                  <span class="stat-label">Recovered</span>
+                  <span class="stat-val recovered">₹2,36,000</span>
+                </div>
+                <div class="dash-stat">
+                  <span class="stat-label">Reminders Sent</span>
+                  <span class="stat-val sent">847</span>
+                </div>
+              </div>
+              <div class="dash-bar-chart" aria-hidden="true">
+                <div class="bar-wrap"><div class="bar" style="height:55%"></div><span>Mon</span></div>
+                <div class="bar-wrap"><div class="bar" style="height:80%"></div><span>Tue</span></div>
+                <div class="bar-wrap"><div class="bar" style="height:40%"></div><span>Wed</span></div>
+                <div class="bar-wrap"><div class="bar active" style="height:95%"></div><span>Thu</span></div>
+                <div class="bar-wrap"><div class="bar" style="height:65%"></div><span>Fri</span></div>
+                <div class="bar-wrap"><div class="bar" style="height:70%"></div><span>Sat</span></div>
+              </div>
+              <div class="dash-notification">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>₹12,000 recovered from Patel Traders</span>
+              </div>
+            </div>
+
+            <div class="hero-floating-badge badge-1">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Auto-sent via WhatsApp</span>
+            </div>
+            <div class="hero-floating-badge badge-2">
+              <i class="fa-solid fa-rupee-sign"></i>
+              <span>60% fewer overdue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section how-it-works" id="how-it-works" aria-labelledby="hiw-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Simple Process</span>
+          <h2 class="section-title" id="hiw-title">How PaiseKiBaat Works</h2>
+          <p class="section-subtitle">From invoice to payment — fully automated in three steps</p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step connector line -->
+          <div class="steps-line" aria-hidden="true"></div>
+
+          <div class="step-card reveal" data-delay="0">
+            <div class="step-number">01</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Upload or Add Invoices</h3>
+              <p class="step-desc">Enter or import your pending invoices in just a few clicks. Supports CSV, Excel, or manual entry.</p>
+            </div>
+            <div class="step-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=200&fit=crop&auto=format"
+                alt="Business professional reviewing invoices on a laptop"
+                loading="lazy"
+                width="300" height="200"
+              />
+            </div>
+          </div>
+
+          <div class="step-card reveal" data-delay="100">
+            <div class="step-number">02</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Set Reminder Schedule</h3>
+              <p class="step-desc">Choose when and how often your customers should be reminded. Hourly, daily, or weekly — you decide.</p>
+            </div>
+            <div class="step-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=300&h=200&fit=crop&auto=format"
+                alt="Calendar and scheduling interface on a smartphone"
+                loading="lazy"
+                width="300" height="200"
+              />
+            </div>
+          </div>
+
+          <div class="step-card reveal" data-delay="200">
+            <div class="step-number">03</div>
+            <div class="step-icon-wrap">
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Automate &amp; Track</h3>
+              <p class="step-desc">PaiseKiBaat sends reminders automatically and shows you real-time payment status — all from one dashboard.</p>
+            </div>
+            <div class="step-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop&auto=format"
+                alt="Analytics dashboard showing payment tracking charts"
+                loading="lazy"
+                width="300" height="200"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="features-bg-blob" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">What You Get</span>
+          <h2 class="section-title" id="features-title">Features</h2>
+          <p class="section-subtitle">Everything you need to streamline payment recovery</p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-card reveal" data-delay="0">
+            <div class="feature-icon-wrap" style="--icon-color:#FF6B35">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Automated Reminders</h3>
+            <p class="feature-desc">Send scheduled reminders via SMS, WhatsApp, email, and calls — no manual effort required.</p>
+            <div class="feature-channels" aria-hidden="true">
+              <i class="fa-solid fa-comment-sms"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-solid fa-envelope"></i>
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </div>
+
+          <div class="feature-card reveal" data-delay="80">
+            <div class="feature-icon-wrap" style="--icon-color:#6366F1">
+              <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Custom Schedules</h3>
+            <p class="feature-desc">Hourly, daily, or weekly reminders — tailored to your business needs and client preferences.</p>
+            <div class="feature-tag-row" aria-label="Schedule options">
+              <span class="ftag">Hourly</span>
+              <span class="ftag">Daily</span>
+              <span class="ftag">Weekly</span>
+            </div>
+          </div>
+
+          <div class="feature-card reveal" data-delay="160">
+            <div class="feature-icon-wrap" style="--icon-color:#10B981">
+              <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Smart Tracking</h3>
+            <p class="feature-desc">Monitor outstanding payments and see who's overdue at a glance with intuitive visual reports.</p>
+            <div class="feature-mini-bar" aria-hidden="true">
+              <div class="mini-bar-fill" style="width:72%"></div>
+            </div>
+            <small class="feature-mini-label" aria-label="72% payment recovery rate">72% recovery rate</small>
+          </div>
+
+          <div class="feature-card reveal" data-delay="0">
+            <div class="feature-icon-wrap" style="--icon-color:#F59E0B">
+              <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Relationship-Friendly</h3>
+            <p class="feature-desc">Automate reminders to keep client relationships positive and professional — never awkward again.</p>
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=240&h=100&fit=crop&auto=format"
+              alt="Business partners shaking hands"
+              class="feature-img"
+              loading="lazy"
+              width="240" height="100"
+            />
+          </div>
+
+          <div class="feature-card reveal" data-delay="80">
+            <div class="feature-icon-wrap" style="--icon-color:#3B82F6">
+              <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Simple Dashboard</h3>
+            <p class="feature-desc">All your reminders and payment statuses in one clean, easy-to-use dashboard — no learning curve.</p>
+            <div class="feature-dash-preview" aria-hidden="true">
+              <div class="fdash-item"><span class="fdash-dot green"></span>Paid — 14</div>
+              <div class="fdash-item"><span class="fdash-dot yellow"></span>Pending — 6</div>
+              <div class="fdash-item"><span class="fdash-dot red"></span>Overdue — 2</div>
+            </div>
+          </div>
+
+          <div class="feature-card reveal" data-delay="160">
+            <div class="feature-icon-wrap" style="--icon-color:#EC4899">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h3 class="feature-title">Secure &amp; Private</h3>
+            <p class="feature-desc">Business data protected with industry-standard AES-256 encryption and strict privacy controls.</p>
+            <div class="feature-security-badges" aria-label="Security certifications">
+              <span class="sec-badge"><i class="fa-solid fa-lock"></i> AES-256</span>
+              <span class="sec-badge"><i class="fa-solid fa-user-shield"></i> GDPR</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IMPACT SECTION ===== -->
+    <section class="section impact" id="impact" aria-labelledby="impact-title">
+      <div class="impact-bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&h=600&fit=crop&auto=format"
+          alt=""
+          class="impact-bg-img"
+          loading="lazy"
+          width="1400" height="600"
+        />
+        <div class="impact-overlay"></div>
+      </div>
+
+      <div class="section-container">
+        <div class="section-header reveal" style="color:#fff">
+          <span class="section-tag light">Real Results</span>
+          <h2 class="section-title light" id="impact-title">Our Impact</h2>
+          <p class="section-subtitle light">Numbers that speak for themselves</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card reveal" data-delay="0">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-arrow-trend-down" aria-hidden="true"></i>
+            </div>
+            <div class="stat-number" data-count="60" data-suffix="%" aria-label="60% reduction">0%</div>
+            <div class="stat-label-text">Reduction in overdue invoices</div>
+          </div>
+          <div class="stat-card reveal" data-delay="100">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            </div>
+            <div class="stat-number" data-count="90" data-suffix="%" aria-label="90% time saved">0%</div>
+            <div class="stat-label-text">Time saved on follow-ups</div>
+          </div>
+          <div class="stat-card reveal" data-delay="200">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-building" aria-hidden="true"></i>
+            </div>
+            <div class="stat-number" data-count="1000" data-suffix="+" aria-label="1000+ businesses">0+</div>
+            <div class="stat-label-text">Businesses trust PaiseKiBaat</div>
+          </div>
+        </div>
+
+        <div class="impact-media-row">
+          <div class="impact-img-card reveal" data-delay="0">
+            <img
+              src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?w=380&h=260&fit=crop&auto=format"
+              alt="Indian business owner reviewing financial documents"
+              loading="lazy"
+              width="380" height="260"
+            />
+          </div>
+          <div class="testimonial-card reveal" data-delay="100">
+            <div class="quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+            <blockquote class="testimonial-quote">
+              "PaiseKiBaat helped us recover payments faster while keeping our client relationships strong. We now spend 90% less time chasing dues."
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="https://i.pravatar.cc/56?img=67"
+                alt="Portrait of R. Sharma, SME Owner"
+                loading="lazy"
+                width="56" height="56"
+                class="author-avatar"
+              />
+              <div class="author-info">
+                <strong>R. Sharma</strong>
+                <span>SME Owner, Delhi NCR</span>
+              </div>
+              <div class="author-stars" aria-label="5 star rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="impact-img-card reveal" data-delay="200">
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=380&h=260&fit=crop&auto=format"
+              alt="Indian rupee currency notes spread out representing financial growth"
+              loading="lazy"
+              width="380" height="260"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Transparent Pricing</span>
+          <h2 class="section-title" id="pricing-title">Pricing</h2>
+          <p class="section-subtitle">Start free. Scale as you grow. No hidden charges.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Starter -->
+          <div class="pricing-card reveal" data-delay="0">
+            <div class="plan-icon-wrap starter">
+              <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+            </div>
+            <div class="plan-badge starter-badge">Free Forever</div>
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-tagline">For small businesses</p>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">0</span>
+              <span class="price-period">/month</span>
+            </div>
+            <ul class="plan-features" aria-label="Starter plan features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 100 reminders/month</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Email &amp; SMS reminders</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Basic dashboard</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Automated calls</li>
+              <li class="disabled"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Advanced tracking</li>
+            </ul>
+            <a href="#contact" class="plan-btn starter-btn" aria-label="Get started with Starter plan">Get Started Free</a>
+          </div>
+
+          <!-- Professional (Highlighted) -->
+          <div class="pricing-card featured reveal" data-delay="100" aria-label="Recommended plan">
+            <div class="plan-icon-wrap pro">
+              <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+            </div>
+            <div class="plan-badge pro-badge">
+              <i class="fa-solid fa-star" aria-hidden="true"></i> Recommended
+            </div>
+            <h3 class="plan-name">Professional</h3>
+            <p class="plan-tagline">For growing teams</p>
+            <div class="plan-price">
+              <span class="price-currency">₹</span>
+              <span class="price-amount">499</span>
+              <span class="price-period">/month</span>
+            </div>
+            <ul class="plan-features" aria-label="Professional plan features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1,000 reminders/month</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> SMS, WhatsApp &amp; Email</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Automated calls included</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Advanced tracking</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Priority support</li>
+            </ul>
+            <a href="#contact" class="plan-btn pro-btn" aria-label="Get started with Professional plan">Start 14-Day Trial</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card reveal" data-delay="200">
+            <div class="plan-icon-wrap enterprise">
+              <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+            </div>
+            <div class="plan-badge enterprise-badge">Custom</div>
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-tagline">For agencies &amp; large businesses</p>
+            <div class="plan-price">
+              <span class="price-amount enterprise-price">Contact Us</span>
+            </div>
+            <ul class="plan-features" aria-label="Enterprise plan features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Unlimited reminders</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> All channels included</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Custom integrations</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Dedicated account manager</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> SLA-backed priority support</li>
+            </ul>
+            <a href="#contact" class="plan-btn enterprise-btn" aria-label="Contact us for Enterprise plan">Contact Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about PaiseKiBaat</p>
+        </div>
+
+        <div class="faq-grid" role="list">
+
+          <div class="faq-item reveal" data-delay="0" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+              id="faq-btn-1"
+            >
+              <div class="faq-q-left">
+                <div class="faq-icon-wrap"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+                <span>Is my data safe with PaiseKiBaat?</span>
+              </div>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-1"
+              role="region"
+              aria-labelledby="faq-btn-1"
+              hidden
+            >
+              <p>Absolutely. We use industry-standard AES-256 encryption for all data in transit and at rest. We never share your business or client data with third parties. Your privacy is our top priority.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="80" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+              id="faq-btn-2"
+            >
+              <div class="faq-q-left">
+                <div class="faq-icon-wrap"><i class="fa-solid fa-bell" aria-hidden="true"></i></div>
+                <span>How do reminders work?</span>
+              </div>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-2"
+              role="region"
+              aria-labelledby="faq-btn-2"
+              hidden
+            >
+              <p>You schedule reminders for your customers, and PaiseKiBaat automatically sends SMS, WhatsApp messages, emails, or calls as per your configured settings. You can personalize the message content and timing for each channel.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="160" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+              id="faq-btn-3"
+            >
+              <div class="faq-q-left">
+                <div class="faq-icon-wrap"><i class="fa-solid fa-gift" aria-hidden="true"></i></div>
+                <span>Can I try it for free?</span>
+              </div>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-3"
+              role="region"
+              aria-labelledby="faq-btn-3"
+              hidden
+            >
+              <p>Yes! The Starter plan is completely free and lets you send up to 100 reminders per month with no credit card required. Upgrade any time as your business grows.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-delay="240" role="listitem">
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+              id="faq-btn-4"
+            >
+              <div class="faq-q-left">
+                <div class="faq-icon-wrap"><i class="fa-solid fa-download" aria-hidden="true"></i></div>
+                <span>Do I need to install anything?</span>
+              </div>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div
+              class="faq-answer"
+              id="faq-answer-4"
+              role="region"
+              aria-labelledby="faq-btn-4"
+              hidden
+            >
+              <p>No installation needed. PaiseKiBaat is entirely web-based and works on any device with a browser — desktop, tablet, or mobile. Simply sign up and start sending reminders within minutes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-bg" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Talk</span>
+          <h2 class="section-title" id="contact-title">Get in Touch</h2>
+          <p class="section-subtitle">Have questions? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info reveal" data-delay="0">
+            <h3 class="contact-info-title">Contact Details</h3>
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="detail-label">Email</span>
+                <a href="mailto:support@paisekibaat.in" class="detail-value">support@paisekibaat.in</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="detail-label">Phone</span>
+                <a href="tel:+918516804848" class="detail-value">+91 85168 04848</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="detail-label">WhatsApp</span>
+                <a href="https://wa.me/918516804848" class="detail-value" target="_blank" rel="noopener noreferrer">Chat with us</a>
+              </div>
+            </div>
+
+            <div class="contact-social" aria-label="Social media links">
+              <a href="#" class="social-btn" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              <a href="#" class="social-btn" aria-label="Follow us on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+              <a href="#" class="social-btn" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal" data-delay="100">
+            <form
+              class="contact-form"
+              id="contactForm"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  class="form-input"
+                  placeholder="Rahul Sharma"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="rahul@yourbusiness.in"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tell us how we can help your business..."
+                  required
+                  rows="4"
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn-primary form-submit" aria-label="Send your message">
+                Send Message
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess" role="alert" aria-live="assertive" hidden>
+              <div class="success-icon"><i class="fa-solid fa-check-circle" aria-hidden="true"></i></div>
+              <h4>Message Sent!</h4>
+              <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" aria-label="PaiseKiBaat">
+          <div class="logo-icon small">
+            <i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i>
+          </div>
+          <span class="logo-text">PaiseKiBaat</span>
+        </a>
+        <p class="footer-tagline">AI-powered payment reminders<br />for Indian businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 PaiseKiBaat. All rights reserved.</p>
+        <p class="footer-sub">Made with <i class="fa-solid fa-heart" style="color:#FF6B35" aria-hidden="true"></i> for Indian businesses</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" hidden>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
